@@ -1,8 +1,86 @@
-.heading {
-    margin: 10px;
-    padding: 20px;
-    background-color: red;
-    color: white;
-    text-align: center;
-    border-radius: 10px;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+  background: linear-gradient(135deg, #fce0e0, #cfdef3);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  background-color: #111827;
+  color: white;
+  padding: 20px;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px;
+}
+
+/* Card */
+.card {
+  width: 300px;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Image */
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Content */
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #0071e3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #005bb5;
 }
